@@ -1,0 +1,73 @@
+name:                servant-reason
+version:             0.1.0.0
+github:              "abarbu/servant-reason"
+license:             BSD3
+author:              "Andrei Barbu"
+maintainer:          "andrei@0xab.com"
+copyright:           "2019 Andrei Barbu"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+- test/reasonml-sources/*.re
+
+synopsis:            Derive Reason types to interact with a Haskell backend
+category:            Web
+description:         Please see the README on GitHub at <https://github.com/abarbu/servant-reason#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- lens
+- servant
+- servant-foreign
+- text
+- wl-pprint-text
+- reason-export
+library:
+  source-dirs: src
+
+tests:
+  servant-reason-test:
+    main:                GenerateSpec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -main-is
+    - GenerateSpec
+    dependencies:
+    - servant-reason
+    - aeson
+    - directory
+    - reason-export
+    - hspec
+    - interpolate
+    - mockery
+    - process
+    - servant
+    - text
+    - HUnit
+    - Diff
+  servant-reason-compile-test:
+    main:                CompileSpec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -main-is
+    - CompileSpec
+    dependencies:
+    - servant-reason
+    - aeson
+    - directory
+    - reason-export
+    - hspec
+    - interpolate
+    - mockery
+    - process
+    - servant
+    - text
+    - HUnit
+    - Diff

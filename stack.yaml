@@ -1,0 +1,8 @@
+resolver: lts-13.12
+
+packages:
+- .
+- location:
+   git: https://github.com/abarbu/reason-export
+   commit: cffffb6cffc684d370c9b4d6d1454751499eb9e2
+  extra-dep: true
