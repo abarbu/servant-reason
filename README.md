@@ -11,6 +11,9 @@ Reason. Types are generated using
 
 More docs on [Hackage](http://hackage.haskell.org/package/servant-reason).
 
+A full example of how to integrate Servant and Reason is available at
+[servant-reason-example](https://github.com/abarbu/servant-reason-example).
+
 ## Usage
 
 Run the tests if you want a concrete example. They will build a _test-cache
