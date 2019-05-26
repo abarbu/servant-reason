@@ -9,7 +9,7 @@ copyright:           "2019 Andrei Barbu"
 extra-source-files:
 - README.md
 - ChangeLog.md
-- test/reasonml-sources/*.re
+- test/reason-sources/*.re
 
 synopsis:            Derive Reason types to interact with a Haskell backend
 category:            Web
