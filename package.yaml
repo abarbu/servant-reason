@@ -22,7 +22,7 @@ dependencies:
 - servant-foreign
 - text
 - wl-pprint-text
-- reason-export
+- reason-export >= 0.1.1.0
 library:
   source-dirs: src
 
