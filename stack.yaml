@@ -4,5 +4,5 @@ packages:
 - .
 - location:
    git: https://github.com/abarbu/reason-export
-   commit: 2fbdeb1ef6799843a5443465490481a18777af49
+   commit: eefc88e17340b8cce23b9c7e2251a917f646288b
   extra-dep: true
